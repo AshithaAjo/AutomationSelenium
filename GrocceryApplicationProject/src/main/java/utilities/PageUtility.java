@@ -10,30 +10,33 @@ public class PageUtility {
 		object.selectByValue(value);
 
 	}
-	
+
 	public void selectDropdownWithDeselectAll(WebElement element, String value) {
 
 		Select object = new Select(element);
 		object.deselectAll();
 
 	}
+
 	public void selectDropdownWithGetFirstSelectedOption(WebElement element, String value) {
 
 		Select object = new Select(element);
 		object.getFirstSelectedOption();
 
 	}
+
 	public void selectDropdownWithGetOptions(WebElement element, String value) {
 
 		Select object = new Select(element);
 		object.getOptions();
 
 	}
+
 	public void selectDropdownWithVisibleText(WebElement element, String text) {
 
 		Select object = new Select(element);
 		object.selectByVisibleText(text);
 
 	}
-	
+
 }
